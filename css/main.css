@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before;
+*:after; {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 26, 18);
+    color: rgb(234, 220, 221);
+    font-family: 'Gotu', sans-serif;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(234, 220, 221);
+    transition: 1sec;
+}
+
+a:hover {
+    color: rgb(179, 79, 25);
+    transition: 1sec;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+h1 {
+    text-align: center;
+/*    color: rgb(20, 26, 18);*/
+}
+
+header {
+    width: 40%;
+    margin-left: 30%;
+}
+
+header p {
+    color: rgb(234, 220, 221);
+    font-size: 20px;
+}
+
+.mouse {
+    color: rgb(234, 220, 221);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+.mouse p {
+    font-size: 32px;
+    font-family: 'Gotu', sans-serif;
+    width: 500px;
+    text-align: left;
+}
+
+.imagesprite {
+    width: 265px;
+    height: 265px;
+    background: url(../img/mouse.png) 0px 0px;
+    background-size: 100% 200%;
+    animation: sprite 0.9s steps(2) infinite;
+    display: block;
+}
+
+@keyframes sprite {
+    to {
+        background-position: 0px 0px;
+    }
+    from {
+        background-position: 0px 530px;
+    }
+}
+
+.bg {
+    width: 960px;
+    height: 540px;
+    background-color: rgb(180, 151, 153);
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(234, 220, 221);
+    opacity: 80%;
+}
+
+footer p {
+    font-family: 'Gotu', sans-serif;
+    color: rgb(20, 26, 18);
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.quote {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.quote a {
+    transition: 1sec;
+}
+
+.quote p {
+    margin-left: 10%;
+    width: 80%;
+    font-size: 1.25em;
+}
+
+.left_quotemark {
+    text-align: left;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+
+.right_quotemark {
+    text-align: right;
+    position: relative;
+    bottom: 50px;
+    right: 0px;
+}
+
+.highlighted {
+    background-color: rgb(179, 79, 25);
+    color: rgb(20, 26, 18);
+    font-weight: 500;
+}
